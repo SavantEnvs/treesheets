@@ -1,0 +1,9 @@
+project: savantenvs/treesheets
+target: ts-paste
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ts-paste/testsuite
+cmds:
+  - cmd: /mayhem/ts_paste_fuzzer
+    libfuzzer: true
+    timeout: 10

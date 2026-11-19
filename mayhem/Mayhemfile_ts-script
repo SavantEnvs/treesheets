@@ -1,0 +1,9 @@
+project: savantenvs/treesheets
+target: ts-script
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ts-script/testsuite
+cmds:
+  - cmd: /mayhem/ts_script_fuzzer
+    libfuzzer: true
+    timeout: 10

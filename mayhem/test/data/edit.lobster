@@ -1,0 +1,10 @@
+import std
+ts.goto_root()
+ts.goto_child(0)
+ts.set_text("hello")
+ts.goto_parent()
+ts.goto_child(4)
+ts.set_text("=1+2")
+ts.goto_parent()
+ts.goto_child(8)
+ts.set_text(string(ts.num_children()))

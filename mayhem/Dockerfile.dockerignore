@@ -1,0 +1,4 @@
+mayhem/build/
+_build/
+/ts_*_fuzzer
+/ts_*_fuzzer-standalone

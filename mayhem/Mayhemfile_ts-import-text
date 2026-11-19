@@ -1,0 +1,9 @@
+project: savantenvs/treesheets
+target: ts-import-text
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ts-import-text/testsuite
+cmds:
+  - cmd: /mayhem/ts_text_fuzzer
+    libfuzzer: true
+    timeout: 10
